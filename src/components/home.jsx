@@ -1,12 +1,11 @@
 import React from "react";
-import Title from "./title";
-import Header from "./header";
-export default function home() {
+import { CalcButton } from "../App";
+export default function home({ state, setState }) {
   return (
     <div>
-      home
-      <Header />
-      <Title />
+      home current state is :{state}
+      <br />
+      <CalcButton state={state} setState={setState} />
     </div>
   );
 }
